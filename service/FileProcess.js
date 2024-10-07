@@ -140,7 +140,7 @@ class FileProcess {
             }
 
               await db.query('UPDATE image_requests SET status = ? WHERE request_id = ?', ['complete', request_id]);        
-              FileProcess.triggerWebhook(request_id);
+              // FileProcess.triggerWebhook(request_id); Stopping this for now
 
         } catch (error) {
             throw error
