@@ -150,7 +150,7 @@ class FileProcess {
 
     static async triggerWebhook(request_id) {
         try {
-            await axios.post('https://your-client-server.com/webhook', {
+            await axios.post('https://compress-your-image.vercel.app/', {
                 request_id: request_id,
                 status: 'complete'
             });
